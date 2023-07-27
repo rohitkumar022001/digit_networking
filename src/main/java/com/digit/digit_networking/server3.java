@@ -15,7 +15,7 @@ import java.util.Scanner;
 /**
  * 
  */
-public class server2 {
+public class server3 {
 
 	/**
 	 * @param args

@@ -14,7 +14,7 @@ import java.util.Scanner;
 /**
  * 
  */
-public class Client2 {
+public class Client3 {
 
 	/**
 	 * @param args
