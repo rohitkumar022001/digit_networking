@@ -23,6 +23,7 @@ public class server1 {
 		ServerSocket listner=new ServerSocket(4000);
 		System.out.println("Server is ready to accept the request");
 		Socket ssoc=listner.accept();
+		for(int i=0;i<3;i++)
 		InputStream is=ssoc.getInputStream();
 		DataInputStream dis=new DataInputStream(is);
 		String temp=dis.readUTF();

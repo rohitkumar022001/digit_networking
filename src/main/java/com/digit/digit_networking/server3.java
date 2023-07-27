@@ -29,12 +29,13 @@ public class server2 {
 		Socket ssoc=listner.accept();
 		InputStream is=ssoc.getInputStream();
 		DataInputStream dis=new DataInputStream(is);
-		
-		
+		OutputStream os=ssoc.getOutputStream();//----
+		DataOutputStream dos=new DataOutputStream(os);//----
+		while(true) {
 		String temp=dis.readUTF();
 		System.out.println(temp);
-		OutputStream os=ssoc.getOutputStream();
-		DataOutputStream dos=new DataOutputStream(os);
+		//OutputStream os=ssoc.getOutputStream();
+		//DataOutputStream dos=new DataOutputStream(os);
 		
 		String msg=sc.nextLine();
 		dos.writeUTF(msg);

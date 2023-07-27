@@ -26,15 +26,16 @@ public class Client2 {
 		
 		OutputStream os=csoc.getOutputStream();
 		DataOutputStream dos=new DataOutputStream(os);
-		
-		
+		InputStream is=csoc.getInputStream();//--
+		DataInputStream dis=new DataInputStream(is);//--
+		while(true) {
 		String msg=sc.nextLine();
 		dos.writeUTF(msg);
-		InputStream is=csoc.getInputStream();
-		DataInputStream dis=new DataInputStream(is);
+		//InputStream is=csoc.getInputStream();
+		//DataInputStream dis=new DataInputStream(is);
 		String temp=dis.readUTF();
 		System.out.println(temp);
-		
+		}
 		
 		
 		
